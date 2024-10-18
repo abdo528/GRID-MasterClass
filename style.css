@@ -1,0 +1,364 @@
+/*---------------- fonts ----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*---------------- general ----------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #27B9C2;
+    font-family: "Open Sans", sans-serif;
+    font-size: .875rem;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+}
+
+p,
+span {
+    color: #9fa3a7;
+    font-family: "Montserrat", sans-serif;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 60px;
+}
+
+h1,
+h3 {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 700;
+}
+
+strong,
+h3 {
+    font-family: "Arvo", serif;
+    font-size: 1.375rem;
+    line-height: 32px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "item1 item1 item2 item2"
+        "item3 item4 item4 item5"
+        "item6 item7 item7 item5"
+        "item8 item9 item10 item10"
+    ;
+}
+
+.item1,
+.item2,
+.item4,
+.item6,
+.item8,
+.item9,
+.item10 {
+    display: flex;
+}
+
+.item7 p,
+.item9 p {
+    width: fit-content;
+    padding: .3125rem .625rem;
+    border-radius: .625rem;
+    color: white;
+}
+
+/* ============= item1 ============= */
+.item1 {
+    grid-area: item1;
+}
+
+.item1 .text {
+    align-self: center;
+    width: 25%;
+    margin: 5.125rem;
+}
+
+.item1 .image img {
+    width: 40%;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+/* ============= item2 ============= */
+.item2 {
+    grid-area: item2;
+    background-color: #eee;
+}
+
+.item2 .text {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.item2 .text a {
+    text-decoration: underline;
+}
+
+/* ============= item3 ============= */
+.item3 {
+    grid-area: item3;
+    background-color: #F05638;
+    padding: 2.125rem;
+}
+
+.item3 .image {
+    display: flex;
+    justify-content: center;
+}
+
+.item3 .image img {
+    width: 70%;
+}
+
+.item3 .text strong{
+    width: 50%;
+    text-align: center;
+}
+
+.item3 .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.25rem;
+}
+
+.item3 .text a {
+    padding-top: .9375rem;
+    color: #FFC80A;
+}
+
+/* ============= item4 ============= */
+.item4 {
+    grid-area: item4;
+    padding: 5rem;
+}
+
+.item4 .part1 {
+    width: 50%;
+    position: relative;
+}
+
+.item4 .part1 .text {
+    width: 60%;
+}
+
+.item4 .part1 .image img {
+    width: 100%;
+    position: absolute;
+    top: 74%;
+    left: -50%;
+}
+
+.item4 .part2 {
+    width: 50%;
+}
+
+/* ============= item5 ============= */
+.item5 {
+    grid-area: item5;
+    background-color: #8166B0;
+}
+
+.item5 .circale p {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: .9375rem;
+    padding: .3125rem .625rem;
+    display: flex;
+    width: fit-content;
+}
+
+.item5 .circale p img {
+    width: 15%;
+}
+
+.item5 .circale {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin-top: 5rem;
+    margin-inline: 2.5rem;
+}
+
+.in-circale,
+.in-circale .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: .9375rem;
+}
+
+.item5 .circale .image img {
+    width: 75%;
+}
+
+.item5 .text {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.item5 h2 {
+    color: white;
+    margin-block: .9375rem;
+}
+
+.item5 span {
+    color: white;
+}
+
+.item5 .text button {
+    background-color: #FFC80A;
+    border: none;
+    border-radius: 1.25rem;
+    padding: .3125rem .9375rem;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.item5 p {
+    color: white;
+}
+
+/* ============= item6 ============= */
+.item6 {
+    grid-area: item6;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item6 .image img {
+    width: 50%;
+    margin-top: 5rem;
+    margin-inline: 20%;
+}
+
+.item6 .text a {
+    position: relative;
+    top: 30px;
+}
+
+/* ============= item7 ============= */
+.item7 {
+    grid-area: item7;
+    background-color: #93B6B7;
+    color: white;
+}
+
+.item7 strong {
+    display: flex;
+    justify-content: center;
+}
+
+.item7 p {
+    background-color: #F05638;
+    margin: 15px 0 0 20px;
+}
+
+.item7 .image {
+    background: url(./images/5bc2f42d5a5ed97dab707e7e_UX.png) center;
+    background-size: cover;
+}
+
+.item7 .image img {
+    width: 100%;
+    position: relative;
+    right: 80px;
+}
+
+/* ============= item8 ============= */
+.item8 {
+    grid-area: item8;
+    background-color: #38D5F4;
+    color: white;
+}
+
+.item8 .circale {
+    margin: auto;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.item8 .circale h3 {
+    width: 80%;
+    text-align: center;
+}
+
+.item8 .in-circale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: .9375rem;
+}
+
+.item8 .in-circale .image img {
+    width: 50%;
+}
+
+/* ============= item9 ============= */
+.item9 {
+    grid-area: item9;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 80px;
+}
+
+.item9 .text p {
+    background-color: #7BC424;
+    margin: auto;
+}
+
+/* ============= item10 ============= */
+.item10 {
+    grid-area: item10;
+    background-color: #2C2C2C;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.item10 .text {
+    margin-right: 6.25rem;
+}
+
+.item10 img {
+    width: 50%;
+}
+
+/* ============= media quary ============= */
+@media (max-width:480px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8"
+            "item9"
+            "item10"
+        ;
+    }
+}
